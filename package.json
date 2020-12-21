@@ -12,14 +12,13 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --output-path angularapp  --aot --prod"
+    "postinstall": "ng build --aot --prod"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.0.9",
     "@angular/common": "~10.0.9",
     "@angular/cli": "^11.0.5",
-    "@angular/compiler-cli": "^8.2.14",
     "@angular/compiler": "~10.0.9",
     "@angular/core": "~10.0.9",
     "@angular/forms": "~10.0.9",
