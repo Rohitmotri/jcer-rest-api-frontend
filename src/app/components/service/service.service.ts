@@ -11,7 +11,7 @@ export class ServiceService {
   constructor( private httpClient:HttpClient) { }
 
   getBranch(): Observable<Response>{
-    const url = "http://localhost:8000/branch/get/branches/";
+    const url = "https://jcer-notes-api.herokuapp.com/branch/get/branches/";
 
     var body = {
       "branches": []
@@ -30,7 +30,7 @@ export class ServiceService {
 
   // get all subject
   getSubjects(): Observable<Response>{
-    const url = "http://localhost:8000/subject/get/subjects/";
+    const url = "https://jcer-notes-api.herokuapp.com/subject/get/subjects/";
 
     var body = {
       "subjects": []
@@ -48,7 +48,7 @@ export class ServiceService {
 
   // get subjects according to branch
   getSubjectBranch(branch_id): Observable<Response>{
-    const url = "http://localhost:8000/subject/getBid/subjects/";
+    const url = "https://jcer-notes-api.herokuapp.com/subject/getBid/subjects/";
 
     var body = {
       "subjects": [branch_id]
@@ -65,7 +65,7 @@ export class ServiceService {
 
   // get subject according to branch and sem
   getSubjectBranchSem(branch_id, sem): Observable<Response>{
-    const url = "http://localhost:8000/subject/getSem/subjects/";
+    const url = "https://jcer-notes-api.herokuapp.com/subject/getSem/subjects/";
 
     var body = {
       "subjects": [
@@ -89,7 +89,7 @@ export class ServiceService {
 
   // get all document
   getDocuments(): Observable<Response>{
-    const url = "http://localhost:8000/document/get/document/";
+    const url = "https://jcer-notes-api.herokuapp.com/document/get/document/";
 
     var body = {
       "document": []
@@ -106,7 +106,7 @@ export class ServiceService {
 
   // get document by subject_id
   getDocumentsSubject(id): Observable<Response>{
-    const url = "http://localhost:8000/document/getSid/document/";
+    const url = "https://jcer-notes-api.herokuapp.com/document/getSid/document/";
 
     var body = {
       "document": [id]
